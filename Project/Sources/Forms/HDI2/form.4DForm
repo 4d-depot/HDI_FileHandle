@@ -1,0 +1,398 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 1000,
+	"windowMaxWidth": 32000,
+	"windowMinHeight": 620,
+	"windowMaxHeight": 32000,
+	"width": 1200,
+	"height": 860,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onLosingFocus",
+		"onGettingFocus",
+		"onUnload",
+		"onTimer",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tabs": {
+					"type": "tab",
+					"top": 20,
+					"left": 20,
+					"width": 1160,
+					"height": 820,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Form:C1466.tabControl",
+					"dataSourceTypeHint": "object",
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					]
+				},
+				"Input": {
+					"type": "input",
+					"left": 80,
+					"top": 80,
+					"width": 1040,
+					"height": 400,
+					"enterable": false,
+					"focusable": false,
+					"styledText": true,
+					"dataSource": "Form:C1466.info",
+					"sizingX": "grow",
+					"fill": "transparent",
+					"borderStyle": "none"
+				},
+				"btnTrace": {
+					"type": "checkbox",
+					"text": "Trace code",
+					"top": 800,
+					"left": 1030,
+					"width": 120,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.trace",
+					"sizingX": "move",
+					"sizingY": "move"
+				},
+				"Input1": {
+					"type": "input",
+					"left": 701,
+					"top": 773,
+					"width": 324,
+					"height": 49,
+					"enterable": false,
+					"focusable": false,
+					"styledText": true,
+					"dataSource": "Form:C1466.report",
+					"sizingX": "move",
+					"sizingY": "move",
+					"borderStyle": "none",
+					"fill": "transparent",
+					"fontWeight": "bold"
+				},
+				"btnTrace1": {
+					"type": "checkbox",
+					"text": "Trace code",
+					"top": 1436,
+					"left": 1581,
+					"width": 1,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.trace",
+					"sizingX": "move",
+					"sizingY": "move"
+				},
+				"Line": {
+					"type": "line",
+					"top": -10,
+					"left": 600,
+					"width": 1,
+					"height": 928,
+					"stroke": "#dda0dd",
+					"visibility": "hidden"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Button2": {
+					"type": "button",
+					"text": "Export data",
+					"top": 160,
+					"left": 500,
+					"width": 200,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button2.4dm",
+					"focusable": false,
+					"sizingY": "move"
+				},
+				"List Box3": {
+					"type": "listbox",
+					"left": 40,
+					"top": 320,
+					"width": 1110,
+					"height": 440,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"listboxType": "collection",
+					"dataSource": "Form:C1466.people",
+					"sizingX": "fixed",
+					"sizingY": "grow",
+					"scrollbarHorizontal": "hidden",
+					"rowHeight": "20px",
+					"headerHeight": "21px",
+					"columns": [
+						{
+							"header": {
+								"text": "ID",
+								"name": "Header16"
+							},
+							"name": "Column16",
+							"footer": {
+								"name": "Footer16"
+							},
+							"dataSource": "This:C1470.ID",
+							"width": 100
+						},
+						{
+							"header": {
+								"name": "Header17",
+								"text": "Lastname"
+							},
+							"name": "Column17",
+							"footer": {
+								"name": "Footer17"
+							},
+							"dataSource": "This:C1470.lastname",
+							"width": 160
+						},
+						{
+							"header": {
+								"name": "Header18",
+								"text": "Firstname"
+							},
+							"name": "Column18",
+							"footer": {
+								"name": "Footer18"
+							},
+							"dataSource": "This:C1470.firstname",
+							"width": 160
+						},
+						{
+							"header": {
+								"name": "Header19",
+								"text": "City"
+							},
+							"name": "Column19",
+							"footer": {
+								"name": "Footer19"
+							},
+							"dataSource": "This:C1470.city",
+							"width": 240
+						},
+						{
+							"header": {
+								"name": "Header20",
+								"text": "Phone"
+							},
+							"name": "Column20",
+							"footer": {
+								"name": "Footer20"
+							},
+							"dataSource": "This:C1470.phone",
+							"width": 160,
+							"verticalAlign": "automatic",
+							"textAlign": "center"
+						},
+						{
+							"header": {
+								"name": "Header21",
+								"text": "Chrono"
+							},
+							"name": "Column21",
+							"footer": {
+								"name": "Footer21"
+							},
+							"dataSource": "This:C1470.chrono",
+							"width": 80,
+							"textAlign": "right"
+						},
+						{
+							"header": {
+								"name": "Header22",
+								"text": "Timestamp"
+							},
+							"name": "Column22",
+							"footer": {
+								"name": "Footer22"
+							},
+							"dataSource": "This:C1470.timestamp",
+							"width": 200,
+							"textAlign": "center"
+						}
+					]
+				},
+				"Button4": {
+					"type": "button",
+					"text": "Import data",
+					"top": 280,
+					"left": 500,
+					"width": 200,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button4.4dm",
+					"focusable": false,
+					"sizingY": "move"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Button6": {
+					"type": "button",
+					"text": "Start  four workers",
+					"top": 200,
+					"left": 500,
+					"width": 200,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button6.4dm",
+					"sizingY": "move",
+					"focusable": false
+				},
+				"List Box2": {
+					"type": "listbox",
+					"left": 45,
+					"top": 340,
+					"width": 1110,
+					"height": 400,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"listboxType": "collection",
+					"dataSource": "Form:C1466.log",
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"scrollbarHorizontal": "hidden",
+					"rowHeight": "20px",
+					"headerHeight": "21px",
+					"columns": [
+						{
+							"header": {
+								"name": "Entête2",
+								"text": "Worker",
+								"fontWeight": "bold"
+							},
+							"name": "Colonne2",
+							"footer": {
+								"name": "Pied2"
+							},
+							"dataSource": "This:C1470.workerID",
+							"textAlign": "center",
+							"fontWeight": "bold"
+						},
+						{
+							"header": {
+								"text": "Timestamp",
+								"name": "Header12",
+								"fontWeight": "bold"
+							},
+							"name": "Column12",
+							"footer": {
+								"name": "Footer12"
+							},
+							"dataSource": "This:C1470.timeStamp",
+							"width": 200,
+							"textAlign": "center"
+						},
+						{
+							"header": {
+								"name": "Header13",
+								"text": "Event code",
+								"fontWeight": "bold"
+							},
+							"name": "Column13",
+							"footer": {
+								"name": "Footer13"
+							},
+							"dataSource": "This:C1470.code",
+							"width": 200,
+							"numberFormat": "###,##0",
+							"dataSourceTypeHint": "number",
+							"textAlign": "center"
+						},
+						{
+							"header": {
+								"name": "Header14",
+								"text": "Event description",
+								"fontWeight": "bold"
+							},
+							"name": "Column14",
+							"footer": {
+								"name": "Footer14"
+							},
+							"dataSource": "This:C1470.description",
+							"width": 300,
+							"textAlign": "center"
+						},
+						{
+							"header": {
+								"name": "Header15",
+								"text": "Form object name",
+								"fontWeight": "bold"
+							},
+							"name": "Column15",
+							"footer": {
+								"name": "Footer15"
+							},
+							"dataSource": "This:C1470.objectName",
+							"width": 300,
+							"textAlign": "center"
+						}
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"text": "Refresh log",
+					"top": 300,
+					"left": 500,
+					"width": 200,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button1.4dm",
+					"focusable": false,
+					"sizingY": "move"
+				}
+			}
+		}
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"geometryStamp": 3678,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"menuBar": "Menu Bar #1",
+	"windowSizingX": "fixed"
+}

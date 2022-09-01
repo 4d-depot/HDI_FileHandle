@@ -1,0 +1,309 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onLosingFocus",
+		"onGettingFocus",
+		"onDrop",
+		"onBeforeKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onUnload",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 640,
+					"height": 170,
+					"stroke": "transparent",
+					"fill": "#E4E4E4"
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 420,
+					"left": 0,
+					"width": 640,
+					"height": 60,
+					"stroke": "transparent",
+					"fill": "#E4E4E4"
+				},
+				"Button_1": {
+					"type": "button",
+					"text": "Button 1",
+					"top": 196,
+					"left": 40,
+					"width": 160,
+					"height": 20,
+					"events": [
+						"onClick",
+						"onLosingFocus",
+						"onGettingFocus"
+					]
+				},
+				"Button_2": {
+					"type": "button",
+					"text": "Button 2",
+					"top": 229,
+					"left": 40,
+					"width": 160,
+					"height": 20,
+					"events": [
+						"onClick",
+						"onLosingFocus",
+						"onGettingFocus"
+					]
+				},
+				"Button_3": {
+					"type": "button",
+					"text": "Button 3",
+					"top": 260,
+					"left": 40,
+					"width": 160,
+					"height": 20,
+					"events": [
+						"onClick",
+						"onLosingFocus",
+						"onGettingFocus"
+					]
+				},
+				"Input_1": {
+					"type": "input",
+					"left": 40,
+					"top": 310,
+					"width": 160,
+					"height": 17,
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onDataChange",
+						"onAfterEdit"
+					],
+					"dataSource": "Form:C1466.input1"
+				},
+				"Input_2": {
+					"type": "input",
+					"left": 40,
+					"top": 340,
+					"width": 160,
+					"height": 17,
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onDataChange",
+						"onAfterEdit"
+					],
+					"dataSource": "Form:C1466.input2"
+				},
+				"Input_3": {
+					"type": "input",
+					"left": 40,
+					"top": 370,
+					"width": 160,
+					"height": 17,
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onDataChange",
+						"onAfterEdit"
+					],
+					"dataSource": "Form:C1466.input3"
+				},
+				"CheckBox_1": {
+					"type": "checkbox",
+					"text": "Checkbox 1",
+					"top": 201,
+					"left": 240,
+					"width": 120,
+					"height": 18,
+					"events": [
+						"onClick",
+						"onLosingFocus",
+						"onGettingFocus"
+					],
+					"dataSource": "Form:C1466.cb1",
+					"dataSourceTypeHint": "boolean"
+				},
+				"CheckBox_2": {
+					"type": "checkbox",
+					"text": "Checkbox 2",
+					"top": 230,
+					"left": 240,
+					"width": 120,
+					"height": 18,
+					"events": [
+						"onClick",
+						"onLosingFocus",
+						"onGettingFocus"
+					],
+					"dataSource": "Form:C1466.cb2",
+					"dataSourceTypeHint": "boolean"
+				},
+				"CheckBox_3": {
+					"type": "checkbox",
+					"text": "Checkbox 3",
+					"top": 261,
+					"left": 240,
+					"width": 120,
+					"height": 18,
+					"events": [
+						"onClick",
+						"onLosingFocus",
+						"onGettingFocus"
+					],
+					"dataSource": "Form:C1466.cb3",
+					"dataSourceTypeHint": "boolean"
+				},
+				"Ruler_1": {
+					"type": "ruler",
+					"left": 242,
+					"top": 370,
+					"width": 360,
+					"height": 20,
+					"max": 100,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.slider1"
+				},
+				"Popup_1": {
+					"type": "dropdown",
+					"left": 240,
+					"top": 310,
+					"width": 120,
+					"height": 20,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.popup1"
+				},
+				"Text": {
+					"type": "text",
+					"text": "Events of this dialog will be logged.\rEvents log can be read in the main form.",
+					"top": 13,
+					"left": 20,
+					"width": 600,
+					"height": 66,
+					"fontSize": 18,
+					"textAlign": "center"
+				},
+				"Button": {
+					"type": "button",
+					"top": 439,
+					"left": 469,
+					"width": 70,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Button",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancel",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 439,
+					"left": 549,
+					"width": 70,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Button",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Input26": {
+					"type": "input",
+					"left": 20,
+					"top": 125,
+					"width": 600,
+					"height": 30,
+					"dataSource": "Form:C1466.countEvent",
+					"dataSourceTypeHint": "number",
+					"numberFormat": "###,##0 events logged",
+					"enterable": false,
+					"focusable": false,
+					"textAlign": "center",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"fontSize": 24,
+					"fontFamily": "Arial",
+					"fontWeight": "normal"
+				},
+				"Input": {
+					"type": "input",
+					"left": 400,
+					"top": 199,
+					"width": 200,
+					"height": 131,
+					"dataSource": "Form:C1466.text"
+				},
+				"Text1": {
+					"type": "text",
+					"text": "Feel free to click here and there to create more and more events log lines!",
+					"top": 83,
+					"left": 20,
+					"width": 600,
+					"height": 26,
+					"fontSize": 14,
+					"fontStyle": "italic",
+					"textAlign": "center",
+					"stroke": "#0000cd"
+				}
+			}
+		}
+	],
+	"geometryStamp": 528,
+	"method": "method.4dm",
+	"width": 640,
+	"height": 480,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}
